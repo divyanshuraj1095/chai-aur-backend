@@ -8,7 +8,7 @@ async()=>{
         `${process.env.MONGODB_URI}/${DB_NAME}`
     )
     console.log(`\n MongoDB connected !! DB HOST : ${connectionInstance.connection.host}`)
-  }catch{
+  }catch(error){
     console.log("Mongo db connection failed: ",error)
     process.exit(1)
   }
